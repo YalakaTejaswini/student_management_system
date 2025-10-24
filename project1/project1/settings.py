@@ -78,7 +78,11 @@ WSGI_APPLICATION = 'project1.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME':'studentdb',
+        'USER':'admin',
+        'PASSWORD':'Tejaswini',
+        'HOST':'studentdb.c27ok2oyqi0g.us-east-1.rds.amazonaws.com',
+        'PORT':'3306'
     }
 }
 
@@ -124,4 +128,5 @@ STATIC_DIRS=os.path.join(BASE_DIR,'staticfile')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
